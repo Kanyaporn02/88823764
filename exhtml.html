@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>
+      This is paragraph <br />
+      <b> This </b> <i>paragraph</i>
+      <u> contain </u>
+
+    <ul>  
+        <li>Coffee</li>  
+        <li>Tea</li>  
+        <li>Milk</li>
+    </ul>
+    <ol>  
+        <li>Coffee</li>  
+        <li>Tea</li>  
+        <li>Milk</li>
+    </ol>
+    <dl>  
+        <dt>Coffee</dt>  
+        <dd>- black hot drink</dd>  
+        <dt>Milk</dt>  
+        <dd>- white cold drink</dd>
+    </dl>
+    <a href="https://www.google.com/" target="_blank">Visit Google</a>
+    <br></br>
+    <a href="https://www.google.com/" target="_blank">Visit Google</a><a href="https://www.google.com/" target="_self">Visit Google</a>
+   
+    <img src="boy.jpg" alt="Girl in a jacket"         
+    style="width:500px;height:600px;" title="Girl in a jacket" />
+    <figure><img src="panda.png" alt="Girl in a jacket"         
+        style="width:500px;height:600px;" title="Girl in a jacket" /><br />
+        <figcaption>Girl in a jacket</figcaption><figure>  
+        </figure>
+
+        <table>  
+            <tr>    
+                <th>Company</th>    
+                <th>Contact</th>    
+                <th>Country</th>  
+            </tr>
+            <tr>    
+                <td>Alfreds Futterkiste</td>    
+                <td>Maria Anders</td>   
+                <td>Germany</td>  
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th></th>
+                <thscope="col">Saturday</th>
+                <thscope="col">Sunday</th>
+            </tr>
+            <tr>
+                <thscope="row">Tickets sold:</th>
+                <td>120</td>
+                <td>135</td>
+            </tr>
+            <tr>
+                <thscope="row">Total sales:</th>
+                <td>$600</td>
+                <td>$675</td>
+            </tr>
+    
+        </table>
+        <table>
+            <tr>
+                <th></th>
+                <th>9am</th>
+                <th>10am</th>
+                <th>11am</th>
+                <th>12am</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <td colspan="2">Geography</td>
+                <td>Math</td>
+                <td>Art</td>
+            </tr>
+         </table>
+         <table>
+            <tr>
+                <th></th>
+                <th>ABC</th>
+                <th>BBC</th>
+                <th>CNN</th>
+            </tr>
+            <tr>
+                <th>6pm - 7pm</th>
+                <td rowspan="2">Movie</td>
+                <td>Comedy</td>
+                <td>News</td>
+            </tr>
+            <tr>
+                <th>7pm - 8pm</th>
+                <td>Sport</td>
+                <td>Current Affairs</td>
+            </tr>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Income</th>
+                    <th>Expenditure</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1st January</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th>2nd January</th>
+                <td>285</td>
+                <td>48</td>
+            </tr>
+            <!-- additional rows as above -->
+            <tr>
+                <th>31st January</th>
+                <td>129</td>
+                <td>64</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td></td><td>7824</td>
+                <td>1241</td></tr>
+        </tfoot>
+        </table>
+        
+<!-- Input type= "text" -->
+        <form>  
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>  
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+        </form>
+<!--Input type= "password"  -->
+<form>  
+    <label for="username">Username:</label>  
+    <br>  
+    <input type="text" id="username" name="username">  <br> 
+     <label for="pass">Password:</label>  
+    <br><input type="password" id="pass" name="password">
+</form>
+
+<!-- Textarea -->
+<br></br>
+<form>  
+    <textarea rows="4" cols="40"></textarea>
+</form>
+
+<!-- Radio -->
+<form>
+    <input type="radio" id="html" name="fav_language" value="HTML">  
+    <label for="html">HTML</label><br> 
+    <input type="radio" id="css" name="fav_language" value="CSS">  
+    <label for="css">CSS</label><br>  <input type="radio" id="javascript" name="fav_language" value="JavaScript"> 
+    <label for="javascript">JavaScript</label>
+</form>
+<br>
+
+<!--  Checkbox-->
+<form>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">  
+    <label for="vehicle1"> I have a bike</label><br> 
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">  <label for="vehicle2"> I have a car</label><br>  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">  <label for="vehicle3"> I have a boat</label>
+</form>
+
+<br>
+<!--  Select-->
+<form>
+   <select> 
+    <option selected disabled >เลือก</option>
+    <option value="volvo">Volvo</option>  
+    <option value="saab">Saab</option>  
+    <option value="fiat">Fiat</option>  
+    <option value="audi">Audi</option>  
+    
+</select>
+
+</form>
+
+<br>
+<!-- Button -->
+<form>
+    <input type="button" value="check me!"><br>
+    <input type="reset" value="Reset"><br><input type="submit" value="Submit"><br> 
+    <br><br>
+    <button type="button">Click Me!</button><br>
+    <button type="reset">Reset</button><br>
+    <button type="submit">Submit</button><br>
+</form>
+
+<br>
+<!-- Input type= file -->
+<form>  
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile">
+</form>
+
+
+
+</p>
+  </body>
+
+</html>
