@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head> </head>
-  <body>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <!--กำหนดขนาดของตัวอักษร ขึ้นบรรทัดใหม่อัตโนมัติ-->
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -9,69 +14,105 @@
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
 
-    <p>
-      This is paragraph <br />
-      <b> This </b> <i>paragraph</i>
-      <u> contain </u>
+    <!--กรณีเขียนซ้อนจะออกมาเป็น2บรรทัด-->
+    <h1>Heading 1<h6>Heading 6</h6>
+    </h1>
 
-    <ul>  
-        <li>Coffee</li>  
-        <li>Tea</li>  
+    <!--กรณีเขียนtagผิดมันจะเเก้เเท็กให้-->
+    <h1>Heading 1<h6>Heading 6</h6>
+    </h1>
+
+    <!--ใช้เเทกpจะเป็นบรรทัดเดียว-->
+    <!--br คือการขึ้นบรรทัดใหม่-->
+    <p>This paragraph<br>
+        contains&nbsp;&nbsp;&nbsp;&nbsp;a lot of linesin the source code,
+        <br><br /><br />but the browser
+        ignores it.
+    </p>
+
+
+    <p>
+        This paragraph<br>
+        <b>This paragraph</b>
+        <i>paragraph</i>
+        <b><u><i>contain</i></u></b>
+        <sub>s</sub> a lot of line
+        <sup>s</sup>in the source code,
+        <br /><br /><br />
+        <hr />but the browser ignores it.</p>
+
+    <!--การลิสเเบบวงกลมดำ-->
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
         <li>Milk</li>
     </ul>
-    <ol>  
-        <li>Coffee</li>  
-        <li>Tea</li>  
+
+    <!--การลิสเเบบเป็นตัวเลข-->
+    <ol>
+        <!--LOOP-->
+        <li>Coffee</li>
+        <!--LOOP-->
+        <li>Tea</li>
         <li>Milk</li>
     </ol>
-    <dl>  
-        <dt>Coffee</dt>  
-        <dd>- black hot drink</dd>  
-        <dt>Milk</dt>  
+
+    <!--การลิสเเบบเป็นเเดท-->
+    <dl>
+
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
         <dd>- white cold drink</dd>
     </dl>
-    <a href="https://www.google.com/" target="_blank">Visit Google</a>
-    <br></br>
-    <a href="https://www.google.com/" target="_blank">Visit Google</a><a href="https://www.google.com/" target="_self">Visit Google</a>
-   
-    <img src="boy.jpg" alt="Girl in a jacket"         
-    style="width:500px;height:600px;" title="Girl in a jacket" />
-    <figure><img src="panda.png" alt="Girl in a jacket"         
-        style="width:500px;height:600px;" title="Girl in a jacket" /><br />
-        <figcaption>Girl in a jacket</figcaption><figure>  
-        </figure>
 
-        <table>  
-            <tr>    
-                <th>Company</th>    
-                <th>Contact</th>    
-                <th>Country</th>  
-            </tr>
-            <tr>    
-                <td>Alfreds Futterkiste</td>    
-                <td>Maria Anders</td>   
-                <td>Germany</td>  
-            </tr>
-        </table>
-        <table>
+
+    <!--link-->
+    <!--targtมี2เเบบ_blank คลิกเเล้วเปิดอีกเเทบ    // _selfเปิดเเทบของตัวเอง -->
+    <a href="https://www.google.com/" target="_blank">Visit Google</a><br>
+
+    <a href="https://www.google.com/" target="_self">Visit Google</a><br>
+
+
+
+    <!--image-->
+    <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;" title="Girl in a jacket" />
+    <figure><img src="" alt="Girl in a jacket" style="width:500px;height:600px;" title="Girl in a jacket" /><br />
+        <figcaption>Girl in a jacket</figcaption>
+    </figure>
+
+    <table border="2" width="50%">
+        <tr>
+            <!--th of header black and center-->
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <br />
+
+        <table border="2" width="50%">
             <tr>
                 <th></th>
                 <thscope="col">Saturday</th>
-                <thscope="col">Sunday</th>
+                    <thscope="col">Sunday</th>
             </tr>
             <tr>
                 <thscope="row">Tickets sold:</th>
-                <td>120</td>
-                <td>135</td>
+                    <td>120</td>
+                    <td>135</td>
             </tr>
             <tr>
                 <thscope="row">Total sales:</th>
-                <td>$600</td>
-                <td>$675</td>
+                    <td>$600</td>
+                    <td>$675</td>
             </tr>
-    
         </table>
-        <table>
+        <table border="2" width="50%">
             <tr>
                 <th></th>
                 <th>9am</th>
@@ -85,8 +126,10 @@
                 <td>Math</td>
                 <td>Art</td>
             </tr>
-         </table>
-         <table>
+        </table>
+        <br />
+
+        <table border="2" width="50%">
             <tr>
                 <th></th>
                 <th>ABC</th>
@@ -105,114 +148,95 @@
                 <td>Current Affairs</td>
             </tr>
         </table>
-        <table>
+        <br />
+
+
+        <table border="2" width="50%">
             <thead>
                 <tr>
                     <th>Date</th>
                     <th>Income</th>
                     <th>Expenditure</th>
                 </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>1st January</th>
-                <td>250</td>
-                <td>36</td>
-            </tr>
-            <tr>
-                <th>2nd January</th>
-                <td>285</td>
-                <td>48</td>
-            </tr>
-            <!-- additional rows as above -->
-            <tr>
-                <th>31st January</th>
-                <td>129</td>
-                <td>64</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <td></td><td>7824</td>
-                <td>1241</td></tr>
-        </tfoot>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1st January</th>
+                    <td>250</td>
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <th>2nd January</th>
+                    <td>285</td>
+                    <td>48</td>
+                </tr><!-- additional rows as above -->
+                <tr>
+                    <th>31st January</th>
+                    <td>129</td>
+                    <td>64</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td>7824</td>
+                    <td>1241</td>
+                </tr>
+            </tfoot>
         </table>
-        
-<!-- Input type= "text" -->
-        <form>  
+        <br />
+
+
+        <action>
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>  
+            <input type="text" id="fname" name="fname"><br>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname">
+            <input type="text" id="lname" name="lname"><br>
+
+            <input type="password">
+            <br>
+            <textarea rows="10"></textarea>
+            <br><br>
+            <input type="reset">
+            <input type="submit">
+            <br><br>
+
+            <label for="testtxtarea">test textarea:</label>
+            <input type="radio" value="M" checked name="radio_test">
+            <br><br>
+            <label for="r1">radio value m</label>
+            <input type="radio" id="r1" value="M" checked name="radio_test">
+            <br><br>
+            <label for="r2">radio value W</label>
+            <input type="radio" id="r2" value="W" name="radio_test">
+            <br><br>
+
+            <select>
+                <option selected disabled>เลือก</option>
+                <option value="1">สีแดง</option>
+                <option value="2">สีแดง</option>
+                <option value="3">สีแดง</option>
+            </select>
+            <br>
+
+            <input type="date">
+            <input type="">
+            <input type="datetime-local">
+            <br><br>
+            <input type="file" id="myfile" name="myfile">
+            <br><br>
+
+
+            <!--การสร้างปุ่มทำได้หลายวิธี-->
+            <!--1-->
+            <input type="reset">
+            <input type="submit">
+            <!--2-->
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
         </form>
-<!--Input type= "password"  -->
-<form>  
-    <label for="username">Username:</label>  
-    <br>  
-    <input type="text" id="username" name="username">  <br> 
-     <label for="pass">Password:</label>  
-    <br><input type="password" id="pass" name="password">
-</form>
+        <br>
 
-<!-- Textarea -->
-<br></br>
-<form>  
-    <textarea rows="4" cols="40"></textarea>
-</form>
-
-<!-- Radio -->
-<form>
-    <input type="radio" id="html" name="fav_language" value="HTML">  
-    <label for="html">HTML</label><br> 
-    <input type="radio" id="css" name="fav_language" value="CSS">  
-    <label for="css">CSS</label><br>  <input type="radio" id="javascript" name="fav_language" value="JavaScript"> 
-    <label for="javascript">JavaScript</label>
-</form>
-<br>
-
-<!--  Checkbox-->
-<form>
-    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">  
-    <label for="vehicle1"> I have a bike</label><br> 
-    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">  <label for="vehicle2"> I have a car</label><br>  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">  <label for="vehicle3"> I have a boat</label>
-</form>
-
-<br>
-<!--  Select-->
-<form>
-   <select> 
-    <option selected disabled >เลือก</option>
-    <option value="volvo">Volvo</option>  
-    <option value="saab">Saab</option>  
-    <option value="fiat">Fiat</option>  
-    <option value="audi">Audi</option>  
-    
-</select>
-
-</form>
-
-<br>
-<!-- Button -->
-<form>
-    <input type="button" value="check me!"><br>
-    <input type="reset" value="Reset"><br><input type="submit" value="Submit"><br> 
-    <br><br>
-    <button type="button">Click Me!</button><br>
-    <button type="reset">Reset</button><br>
-    <button type="submit">Submit</button><br>
-</form>
-
-<br>
-<!-- Input type= file -->
-<form>  
-    <label for="myfile">Select a file:</label>
-    <input type="file" id="myfile" name="myfile">
-</form>
-
-
-
-</p>
-  </body>
+</body>
 
 </html>
